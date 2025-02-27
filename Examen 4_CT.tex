@@ -1,0 +1,121 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}		% Caracteres latinos
+\usepackage[spanish]{babel}		% Idioma español
+\usepackage{geometry}			% Organizar el documento
+\usepackage{graphicx}			% Incluir gráficos
+\usepackage{makecell}			% Para personalizar las celdas de una tabla
+\usepackage[nohdr]{mathexam}	% Añadimos el paquete mathexam (sin header)
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{tikz,pgfplots}
+\usepgfplotslibrary{polar}
+\usepackage[shortlabels]{enumitem}
+ \renewcommand{\baselinestretch}{1.5}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{esvect}
+\usepackage[fleqn]{mathtools}
+\usepackage{relsize}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[document]{ragged2e}
+ \usepackage{textpos}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+
+
+\geometry{
+	a4paper,                    % Tamaño del documento
+	hmargin = {1.7cm, 1.7cm}, 	% Margen horizontal izquierdo, derecho
+	vmargin = {1cm, 1cm},	    % Margen vertical superior, inferior
+	headsep = 4mm,				% Separación entre el encabezado y el texto
+	head = .2cm,				% Tamaño del encabezado
+	% marginparsep = 5mm, 		% Seperación entre las notas y el texto
+	% marginpar = 1.5cm,		% Tamaño de las notas
+	includeall,                 % incluye el encabezado, footer y notas dentro del tamaño del documento
+	nomarginpar,	            % Elimina las notas
+	foot = 1cm,                 % Tamaño del footer
+	twoside,                	% Habilita el modo de impresión a doble cara
+}
+
+\selectlanguage{spanish}       
+\spanishdecimal{.}
+
+
+\newcommand{\iuni}{\pmb{\hat{\imath}}}
+\newcommand{\juni}{\pmb{\hat{\jmath}}}
+\newcommand{\kuni}{\pmb{\hat{k}}}
+% DOCUMENTO
+\begin{document}
+
+\centering
+
+
+\Large 
+\textbf{Examen 4}\\
+%\large 
+%Unidad 2: Integrales triples. Integrales de línea\\
+%Valor: 25 puntos\\
+
+
+\normalsize
+
+\pointpoints{punto}{puntos}
+\pointformat{\bfseries\boldmath(\thepoints)}
+\vskip12pt
+
+    
+    \begin{questions}
+
+     \question (2.5 pts.)
+       Si la proporción de nacimientos de una población es $b(t)=2200e^{0.024t}$ personas por cada año y la de decesos es $d(t)=1460e^{0.018t}$ personas por cada año. Encuentra el área entre estas curvas para $0\leq t\leq 10$. ¿Qué representa el área?
+    
+\vskip10pt
+\question (3 pts.)
+El administrador de un restaurante de comida rápida determina que el tiempo promedio que sus clientes esperan a ser atendidos es 2.5 minutos.
+\begin{enumerate}[a)]
+\item Encuentra la probabilidad (usando una función de densidad de probabilidad exponencial) de que un cliente tenga que esperar durante más de 4 minutos.
+\item Encuentra la probabilidad de que un cliente sea atendido
+dentro de los primeros dos minutos.
+%\item El administrador quiere anunciar que cualquier persona que no sea atendida dentro de cierto número de minutos, tiene derecho a una hamburguesa gratis. Pero no quiere dar hamburguesas gratis a más de 2\% de sus clientes. ¿Qué debe decir el anuncio?
+\end{enumerate}
+\vskip10pt
+    \question  (2.5 pts.) Si $f(t)$ es continua para $t\geq 0$, la \textit{transformada de Laplace de $f$} es la función de $F$ definida por $$F(s)=\displaystyle\int_0^\infty f(t)e^{-st}\;dt$$
+    y el dominio de $F$ es el conjunto de todos los números $s$ para los que la integral converge. Encuentra la transformada de Laplace de la  función $f(t)=t$
+    
+%    \begin{enumerate}[a)]
+%        \item $f(t)=e^t$.
+%        \item $f(t)=t$.
+%    \end{enumerate}{}
+\vskip10pt
+
+ \question  (2 pts.) La respiración es cíclica y un ciclo respiratorio completo —desde el principio de la inhalación hasta el final de la exhalación— requiere alrededor de 5 $s$. La tasa máxima de aire que entra en los pulmones es de más o menos 0.5 $L/s$, por lo que a menudo se ha usado la función $f(t)=\dfrac{1}{2}sen\left(\dfrac{2\pi t}{5}\right)$ para modelar la razón de flujo de aire hacia los pulmones. Usa este modelo para determinar el volumen de aire inhalado en los pulmones al tiempo $t$.
+\vskip10pt
+
+\question  (2 pts.) La densidad lineal de una varilla de 8 $m$ de longitud es $\rho(x)=\dfrac{12}{\sqrt{x+1}} \, kg/m$, donde $x$ se mide en metros desde un extremo de la varilla. Determina la densidad promedio de la varilla. 
+%\textbf{Punto extra}: Determina si la siguiente integral converge o diverge. $$\displaystyle\int_1^\infty \dfrac{1}{\sqrt{x^2 -0.1}}\;dx$$
+
+%\question Si $f(x)=(1+x)^{-1}$, encuentra una fórmula para la $n-$ésima derivada $f^{(n)}(x)$.
+
+    
+        \end{questions}
+        \vskip30pt
+ \RaggedRight
+     
+    \newpage
+
+
+\newgeometry{
+	hmargin = {1.5cm, 1.5cm},
+	vmargin = {5cm, 1cm},
+	nohead,			% Elimina el encabezado
+	nomarginpar,	% Elimina las notas
+	includeall,
+}% \savegeometry{geometria_1}
+
+\pagestyle{foot}    % El estilo de ésta página sólo constará de pié de página
+\runningfooter{}{}{Página \thepage\ de \numpages}
+
+\end{document}

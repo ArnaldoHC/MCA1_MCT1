@@ -1,0 +1,133 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}		% Caracteres latinos
+\usepackage[spanish]{babel}		% Idioma español
+\usepackage{geometry}			% Organizar el documento
+\usepackage{graphicx}			% Incluir gráficos
+\usepackage{makecell}			% Para personalizar las celdas de una tabla
+\usepackage[nohdr]{mathexam}	% Añadimos el paquete mathexam (sin header)
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{tikz,pgfplots}
+\usepgfplotslibrary{polar}
+\usepackage[shortlabels]{enumitem}
+ \renewcommand{\baselinestretch}{1.5}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{esvect}
+\usepackage[fleqn]{mathtools}
+\usepackage{relsize}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[document]{ragged2e}
+ \usepackage{textpos}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+
+
+\geometry{
+	a4paper,                    % Tamaño del documento
+	hmargin = {1.7cm, 1.7cm}, 	% Margen horizontal izquierdo, derecho
+	vmargin = {1cm, 1cm},	    % Margen vertical superior, inferior
+	headsep = 4mm,				% Separación entre el encabezado y el texto
+	head = .2cm,				% Tamaño del encabezado
+	% marginparsep = 5mm, 		% Seperación entre las notas y el texto
+	% marginpar = 1.5cm,		% Tamaño de las notas
+	includeall,                 % incluye el encabezado, footer y notas dentro del tamaño del documento
+	nomarginpar,	            % Elimina las notas
+	foot = 1cm,                 % Tamaño del footer
+	twoside,                	% Habilita el modo de impresión a doble cara
+}
+
+\selectlanguage{spanish}       
+\spanishdecimal{.}
+
+
+\newcommand{\iuni}{\pmb{\hat{\imath}}}
+\newcommand{\juni}{\pmb{\hat{\jmath}}}
+\newcommand{\kuni}{\pmb{\hat{k}}}
+% DOCUMENTO
+\begin{document}
+
+\centering
+
+
+\Large 
+\textbf{Examen 2}\\
+%\large 
+%Unidad 2: Integrales triples. Integrales de línea\\
+%Valor: 25 puntos\\
+
+
+\normalsize
+
+\pointpoints{punto}{puntos}
+\pointformat{\bfseries\boldmath(\thepoints)}
+\vskip15pt
+
+    
+    \begin{questions}
+
+     \question (3 pts.) Resuelve únicamente un problema:
+ \begin{enumerate}[I)]
+   \item La reacci\'on del cuerpo a una dosis de medicina puede algunas veces ser representada por una ecuaci\'on de la forma $$R=M^2(\frac{C}{2}-\frac{M}{3})$$ donde $C$ es una constante positiva y $M$ es la cantidad de medicina absorbida en la sangre. Si la reacci\'on es un cambio en la presi\'on de la sangre, $R$ se mide en mil\'imetros de mercurio. Si la reacci\'on es un cambio de temperatura, $R$ se mide en grados, etc. \\
+    Encuentra $dR/dM$. Esta derivada, como una funci\'on de $M$, se denomina la sensibilidad del cuerpo a la medicina. Usa esta \'ultima para encontrar la cantidad de medicina para la cual el cuerpo es m\'as sensible. 
+
+    \item Una plataforma de perforación a 12 km de la costa debe ser conectada mediante un oleoducto a una refinería que está a 20 km en línea recta desde el punto de la costa más cercano a la plataforma. Si instalar la tubería debajo del agua cuesta \$500,000 por km y en tierra cuesta \$300,000 por km, ¿Qué combinación de instalación subacuática y terrestre da la conexión más barata?
+\end{enumerate}
+    
+\vskip10pt
+%    \question (7 pts.)
+%    Si $f(x)=ax^3+bx^2+cx+d$, determina $a$, $b$, $c$, $d$ de modo que $f$ tenga un extremo relativo en el punto $(0,3)$ y un punto de inflexión en $(1,-1)$. Dibuja la gráfica resultante.
+     
+\vskip10pt
+%     \question (6 pts.)
+%       Sea $f(x)$ continua en $[a,b]$ y diferenciable en $(a,b)$. Demuestra que, si $f'(x)<0$ para toda $x\in (a.b)$ entonces $f(x)$ es decreciente en $[a,b]$.
+
+%\vskip10pt
+%     \question (6 pts.)
+%     Se va a fabricar una lata para que contenga 1 L de aceite. Encuentra las dimensiones que minimizarán el costo del metal para fabricar la lata. 
+  
+    
+%\vskip10pt
+\question (2.5 pts.)
+    Encuentra una función cúbica $f(x)=ax^3+bx^2+cx+d$ que tenga un máximo local en el punto $(3,-2)$ y un mínimo local en el punto $(1,0)$. 
+
+%\question (2.5 pts.) Considere una barra de 80 cm. Suponga que la temperatura es de 500 °C en el punto 0, y 495 °C en $x = 20$. Suponga que la temperatura está dada por la fórmula $T(x) = 500-ax$ para toda $x$ de 0 a 80. ¿Cuánto debe valer $a$? Determine la diferencia en temperatura entre el punto $x = 30$ y $x = 40$. ¿Cuál es el promedio en el decremento de la temperatura en el intervalo $[30,40]$? Calcule la tasa de cambio instantánea de la temperatura en $x = 30$ y para cualquier $x$.
+
+    \question  (2.5 pts.) Se forma una molécula del producto $C$ a partir de una molécula del reactivo $A$ y una molécula del reactivo $B$ y las concentraciones iniciales de $A$ y $B$ tienen un valor común $[A]=[B]=a\,moles/L$, entonces
+    $$[C]=\frac{a^2kt}{akt+1}$$
+    donde $k$ es una constante
+    \begin{enumerate}[i)]
+        \item Determina la velocidad de reacción en el instante $t$.
+        \item Demuestra que si $x=[C]$, entonces $\frac{dx}{dt}=k(a-x)^2$.
+    \end{enumerate}{}
+
+\question (2 pts.) Si $f(x)=x^n$, encuentra una fórmula para la $n-$ésima derivada $f^{(n)}(x)$.
+
+%\question Si $f(x)=(1+x)^{-1}$, encuentra una fórmula para la $n-$ésima derivada $f^{(n)}(x)$.
+
+\vskip15pt
+\textbf{Punto extra}: Derivar $f(x)=(x^3 -1)^{100}$
+
+    
+        \end{questions}
+        \vskip30pt
+ \RaggedRight
+     
+    \newpage
+
+
+\newgeometry{
+	hmargin = {1.5cm, 1.5cm},
+	vmargin = {5cm, 1cm},
+	nohead,			% Elimina el encabezado
+	nomarginpar,	% Elimina las notas
+	includeall,
+}% \savegeometry{geometria_1}
+
+\pagestyle{foot}    % El estilo de ésta página sólo constará de pié de página
+\runningfooter{}{}{Página \thepage\ de \numpages}
+
+\end{document}
